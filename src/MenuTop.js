@@ -1,21 +1,24 @@
-import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Menu } from 'semantic-ui-react';
+import {
+    NavLink,
+  } from "react-router-dom";
 
 export default class MenuTop extends Component {
     render() {  
       return (
         <Menu stackable>
         <Menu.Item>
-            MAGDALENA RUSANOVA
+            <NavLink to='/'>MAGDALENA RUSANOVA</NavLink>
         </Menu.Item>
         <Menu.Item>
-            About me
+        <NavLink to="/AboutMe">AboutMe</NavLink>
         </Menu.Item>
         <Menu.Item>
-            Gallery
+        <NavLink to="/Gallery">Gallery</NavLink>
         </Menu.Item>
         <Menu.Item>
-            Keep in Touch
+        <NavLink to="/Contact">Keep in touch</NavLink>
         </Menu.Item>
         </Menu>
       );
